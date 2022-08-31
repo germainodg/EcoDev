@@ -1,0 +1,49 @@
+.box{
+background-color: #faebd7;
+}
+ body{
+    background-color: antiquewhite;
+ }
+
+ .title{
+    padding-left: 500px;
+   
+ }
+
+ .title h2{
+color: rgb(245, 99, 89);
+ }
+
+  .store{
+    padding-left: 500px !important;
+    padding-top: 50px;
+    width: 500px !important;
+    height: 50px;
+
+ } 
+
+ .mega{
+   
+    width: 500px;
+    height: 100px !important;
+ } 
+
+ .trade{
+    padding-left: 500px;
+    padding-top: 50px;
+    width: 500px;
+    height: 50px;
+ }
+
+ .debit{
+   width: 200px;
+   height: 100px;
+ }
+
+ .temps{
+   padding-left: 500px;
+   padding-top: 50px;
+   width: 50px;
+   height: 20px;
+   display: flex;
+ }

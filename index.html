@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>compteur</title>
+</head>
+
+<body>
+    <div class="title">
+        <h2>BANDWIDTH CALCULATOR</h2>
+    </div>
+    <script >
+        function calc() {
+            var n1 = parseInt(document.getElementById('n1').value);
+            var n2 = parseInt(document.getElementById('n2').value);
+            var oper = document.getElementById('operators').value;
+
+            if (oper === '+') {
+                document.getElementById('result').value = n1+n2;
+            }
+            
+            
+            if (oper === '-') {
+                document.getElementById('result').value = n1-n2;
+            }
+
+            
+            if (oper === '/') {
+                document.getElementById('result').value = n1/n2;
+            }
+
+        }
+    </script>
+    
+    
+
+
+    <select id="operators">
+        <option value="/" >kbps</option>
+        <option value="+" >Mbps</option>
+        <option value="-" >Gbps</option>
+    </select>
+
+    
+    <div class="store">
+        <input type="text" id="n1"/>
+        <select name="taille" id="operators"> 
+          <option value="100">kbyte</option>
+          <option value="1000">Mega</option>
+          <option value="10000">Giga</option>
+        </select>
+    </div>
+    <div class="trade">
+       
+        <input type="text" id="n2"/>
+        <select name="operators">
+            <option value="+" >kbps</option>
+            <option value="-" >Mbps</option>
+            <option value="/" >Gbps</option>
+        </select>
+    </div>
+        
+        
+  
+    
+
+    
+    <div class="temps">
+        <button onclick="calc(); ">=</button>
+        <input type="text" name="" id="result">
+        <!-- <input type="text" name="" id="">
+     <input type="text" name="" id="">
+     <input type="text" name="" id=""> -->
+
+    </div>
+
+</body>
+
+</html>
